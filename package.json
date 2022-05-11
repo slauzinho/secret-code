@@ -1,0 +1,15 @@
+{
+  "name": "secret-code",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "cross-env TAILWIND_MODE=watch vite",
+    "build": "cross-env TAILWIND_MODE=build vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.9.9",
+    "cross-env": "^7.0.3",
+    "vitawind": "^2.2.4"
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript code</title>
+  </head>
+  <body>
+    <div class="flex flex-1 items-center justify-center min-h-screen flex-col">
+      <form name="verify">
+        <div class="flex space-x-4">
+          <input
+            class="px-3 w-14 h-14 text-4xl rounded border-2 border-black flex justify-center items-center uppercase"
+            type="text"
+            name="n1"
+            maxlength="1"
+          />
+          <input
+            class="px-3 w-14 h-14 text-4xl rounded border-2 border-black flex justify-center items-center uppercase"
+            type="text"
+            name="n2"
+            maxlength="1"
+          />
+          <input
+            class="px-3 w-14 h-14 text-4xl rounded border-2 border-black flex justify-center items-center uppercase"
+            type="text"
+            name="n3"
+            maxlength="1"
+          />
+          <input
+            class="px-3 w-14 h-14 text-4xl rounded border-2 border-black flex justify-center items-center uppercase"
+            type="text"
+            name="n4"
+            maxlength="1"
+          />
+          <input
+            class="px-3 w-14 h-14 text-4xl rounded border-2 border-black flex justify-center items-center uppercase"
+            type="text"
+            name="n5"
+            maxlength="1"
+          />
+          <input
+            class="px-3 w-14 h-14 text-4xl rounded border-2 border-black flex justify-center items-center uppercase"
+            type="text"
+            name="n6"
+            maxlength="1"
+          />
+        </div>
+        <div
+          id="error-message"
+          class="hidden text-center mt-6 text-red-500 font-medium"
+        >
+          😔 Your code is wrong! Try again.
+        </div>
+        <input
+          type="submit"
+          value="Verify"
+          class="rounded-md bg-gray-600 text-white font-medium flex flex-1 px-3 py-2 w-full justify-center uppercase mt-8"
+        />
+      </form>
+      <div id="success-message" class="hidden">
+        🥳 Congrats! You have solved the puzzle.
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
